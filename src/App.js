@@ -86,8 +86,8 @@ function App() {
 
       <h1>Answer:</h1>
       {isLoading && <p>Loading...</p>}
-      {answer && <p>{answer}</p>}
-      {imageUrl && <img src={imageUrl} alt="Uploaded" />}
+      {!isLoading && answer && <p>{answer}</p>}
+      {!isLoading && imageUrl && <img src={imageUrl} alt="Uploaded" />}
     </>
   );
 }
