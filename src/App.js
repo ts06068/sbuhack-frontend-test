@@ -42,7 +42,7 @@ function App() {
 
     // upload image to cloudinary using cloudinary API
     const response = await axios
-      .post("https://api.cloudinary.com/v1_1/dwp6hrsi5/image/upload", data)
+      .post("https://api.cloudinary.com/v1_1/dwp6hrsi5/upload", data)
       .catch((error) => {
         alert(error.message);
       });
