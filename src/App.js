@@ -88,6 +88,8 @@ function App() {
       {isLoading && <p>Loading...</p>}
       {!isLoading && answer && <p>{answer}</p>}
       {!isLoading && imageUrl && <img src={imageUrl} alt="Uploaded" />}
+      <br />
+      {!isLoading && imageUrl && <video src={imageUrl} controls></video>}
     </>
   );
 }
