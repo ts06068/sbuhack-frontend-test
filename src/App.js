@@ -41,6 +41,7 @@ function App() {
     data.append("upload_preset", uploadPreset);
 
     // upload image to cloudinary using cloudinary API
+    // https://res.cloudinary.com/demo/image/upload/c_thumb,g_face,h_200,w_200/r_max/f_auto/woman-blackdress-stairs.png
     const response = await axios
       .post("https://api.cloudinary.com/v1_1/dwp6hrsi5/upload", data)
       .catch((error) => {
